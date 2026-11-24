@@ -36,8 +36,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
   nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
   .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
@@ -93,7 +93,7 @@
 <nav><div class="wrap">
   <a class="brand" href="#top"><span class="emoji">🎬</span> diretor-animacao</a>
   <span class="sep">|</span>
-  <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+  <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
   <div class="links">
     <a class="sec" href="#oque">O que é</a>
     <a class="sec" href="#fluxo">Como funciona</a>
@@ -101,7 +101,7 @@
     <a class="sec" href="#exemplos">Exemplos</a>
     <a class="sec" href="#roadmap">Roadmap</a>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/diretor-animacao" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/diretor-animacao" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -114,7 +114,7 @@
       <p class="lead">O Diretor de Animação analisa cada imagem com visão, segmenta a narração em beats e decide câmera, duração, transição e parallax por imagem. Render via pixflow, sem IA generativa de vídeo.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/diretor-animacao" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/diretor-animacao" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure><pre><span class="c"># instalar a skill (symlink) e checar dependências</span>
@@ -127,7 +127,7 @@
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
   <h2>Um diretor que decide, plano a plano</h2>
-  <p class="sub">Você entrega imagens prontas (fotos reais e/ou ilustrações) e a narração (áudio ou texto). A skill dirige o material seguindo gramática cinematográfica e entrega um MP4 — sem gerar vídeo com IA.</p>
+  <p class="sub">Você entrega imagens prontas (fotos reais e/ou ilustrações) e a narração (áudio ou texto). A skill dirige o material seguindo gramática cARCKHÉtográfica e entrega um MP4 — sem gerar vídeo com IA.</p>
   <div class="grid g3">
     <div class="card"><h3>🎬 Análise por imagem</h3><p>Visão lê cada imagem: tipo, conteúdo, emoção e ponto de interesse <code>at:[x,y]</code>. Foto real ganha parallax 2.5D pleno; desenho fica com parallax 0 (regra validada por A/B).</p></div>
     <div class="card"><h3>🎬 Direção por beat</h3><p>18 movimentos de câmera (crane, aerial, dolly zoom, whip pan) + framing from/to, com regras de alternância, amplitude (≤2 dramáticos seguidos) e fim suspenso no plano mais calmo.</p></div>
@@ -216,7 +216,7 @@
   <div class="grid g2">
     <div class="card"><h3>🎬 O Pequeno Príncipe</h3><p>Primeiro filme real da skill: 21 ilustrações + 22 WAVs de narração viraram 2min11 com 26 shots, música CC0 com ducking, vento, whooshes e shimmer. Decupagem completa em <code>exemplos/pequeno-principe.md</code>.</p></div>
     <div class="card"><h3>🎬 Pilotos F0…F2</h3><p>A pasta <code>piloto-f0/</code> guarda pilotos e experimentos com specs <code>*.movie.yaml</code> e decupagens que validaram cada regra (foto vs. desenho, transições, fim suspenso).</p></div>
-    <div class="card"><h3>🎬 Gramática cinematográfica</h3><p>Tabela mestra movimento × beat e curva de 3 atos em <code>references/gramatica-direcao.md</code> — a base de decisão da direção.</p></div>
+    <div class="card"><h3>🎬 Gramática cARCKHÉtográfica</h3><p>Tabela mestra movimento × beat e curva de 3 atos em <code>references/gramatica-direcao.md</code> — a base de decisão da direção.</p></div>
     <div class="card"><h3>🎬 Lições de render</h3><p><code>DICAS-CORRECOES.md</code> reúne 9 lições cross-projeto: anti-pisca, frames pretos, anti-fantasma e mais.</p></div>
   </div>
 </div></section>
@@ -235,8 +235,8 @@
   <div class="wrap">
     <div class="pill">Skill Claude Code</div><div class="pill">pixflow v2.3+</div><div class="pill">Node + FFmpeg</div>
     <p style="margin-top:18px">diretor-animacao · render determinístico, sem IA de vídeo ·
-      <a href="https://github.com/inematds/diretor-animacao">github.com/inematds/diretor-animacao</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/diretor-animacao">github.com/linnoff88-dev/diretor-animacao</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
