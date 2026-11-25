@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>diretor-animacao — Imagens + narração viram filme, sem IA de vídeo</title>
-<meta name="description" content="O Diretor de Animação: transforma imagens prontas e narração em um filme MP4 profissional com render determinístico via pixflow, sem IA generativa de vídeo.">
+<title>diretor-animacao — Imagens + narraçêo viram filme, sem IA de vídeo</title>
+<meta name="description" content="O Diretor de Animaçêo: transforma imagens prontas e narraçêo em um filme MP4 profissional com render determinístico via pixflow, sem IA generativa de vídeo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -110,8 +110,8 @@
   <div class="wrap">
     <div>
       <span class="chip">Skill do Claude Code · render determinístico</span>
-      <h1>Imagens prontas + narração viram <span class="amb">filme</span>.</h1>
-      <p class="lead">O Diretor de Animação analisa cada imagem com visão, segmenta a narração em beats e decide câmera, duração, transição e parallax por imagem. Render via pixflow, sem IA generativa de vídeo.</p>
+      <h1>Imagens prontas + narraçêo viram <span class="amb">filme</span>.</h1>
+      <p class="lead">O Diretor de Animaçêo analisa cada imagem com visêo, segmenta a narraçêo em beats e decide câmera, duraçêo, transiçêo e parallax por imagem. Render via pixflow, sem IA generativa de vídeo.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
         <a class="btn ghost" href="https://github.com/linnoff88-dev/diretor-animacao" target="_blank" rel="noopener">Ver no GitHub</a>
@@ -127,10 +127,10 @@
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
   <h2>Um diretor que decide, plano a plano</h2>
-  <p class="sub">Você entrega imagens prontas (fotos reais e/ou ilustrações) e a narração (áudio ou texto). A skill dirige o material seguindo gramática cARCKHÉtográfica e entrega um MP4 — sem gerar vídeo com IA.</p>
+  <p class="sub">Você entrega imagens prontas (fotos reais e/ou ilustrações) e a narraçêo (áudio ou texto). A skill dirige o material seguindo gramática cARCKHÉtográfica e entrega um MP4 — sem gerar vídeo com IA.</p>
   <div class="grid g3">
-    <div class="card"><h3>🎬 Análise por imagem</h3><p>Visão lê cada imagem: tipo, conteúdo, emoção e ponto de interesse <code>at:[x,y]</code>. Foto real ganha parallax 2.5D pleno; desenho fica com parallax 0 (regra validada por A/B).</p></div>
-    <div class="card"><h3>🎬 Direção por beat</h3><p>18 movimentos de câmera (crane, aerial, dolly zoom, whip pan) + framing from/to, com regras de alternância, amplitude (≤2 dramáticos seguidos) e fim suspenso no plano mais calmo.</p></div>
+    <div class="card"><h3>🎬 Análise por imagem</h3><p>Visêo lê cada imagem: tipo, conteúdo, emoçêo e ponto de interesse <code>at:[x,y]</code>. Foto real ganha parallax 2.5D pleno; desenho fica com parallax 0 (regra validada por A/B).</p></div>
+    <div class="card"><h3>🎬 Direçêo por beat</h3><p>18 movimentos de câmera (crane, aerial, dolly zoom, whip pan) + framing from/to, com regras de alternância, amplitude (≤2 dramáticos seguidos) e fim suspenso no plano mais calmo.</p></div>
     <div class="card"><h3>🎬 Render determinístico</h3><p>O motor pixflow v2.3+ rende parallax, transições e looks a partir de um spec YAML <code>pixflow.movie/v1</code>. Mesmo spec, mesmo resultado — nada de IA generativa de vídeo.</p></div>
   </div>
 </div></section>
@@ -138,20 +138,20 @@
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>VER → OUVIR → DECIDIR → DECUPAGEM → TRILHA → SPEC + RENDER → VERIFICAR</h2>
-  <p class="sub">O fluxo completo da skill, da leitura das imagens até a verificação dos frames. A narração é a fonte única de timing: ela governa as durações.</p>
+  <p class="sub">O fluxo completo da skill, da leitura das imagens até a verificaçêo dos frames. A narraçêo é a fonte única de timing: ela governa as durações.</p>
   <div class="flow">
-    <span>VER (visão das imagens)</span><span class="arr">→</span>
-    <span>OUVIR (narração em beats)</span><span class="arr">→</span>
-    <span>DECIDIR (câmera/transição)</span><span class="arr">→</span>
+    <span>VER (visêo das imagens)</span><span class="arr">→</span>
+    <span>OUVIR (narraçêo em beats)</span><span class="arr">→</span>
+    <span>DECIDIR (câmera/transiçêo)</span><span class="arr">→</span>
     <span>DECUPAGEM</span><span class="arr">→</span>
     <span>TRILHA</span><span class="arr">→</span>
     <span>SPEC + RENDER</span><span class="arr">→</span>
     <span>VERIFICAR</span>
   </div>
   <div class="grid g3" style="margin-top:26px">
-    <div class="card"><h3>Decupagem antes do render</h3><p>A skill mostra a tabela cena · imagem · beat · movimento · transição · duração para você aprovar antes de rodar o render.</p></div>
-    <div class="card"><h3>Transições por fronteira</h3><p>Nunca uniformes: cut (padrão, ~70%), whip, whip_left, zoom_blur, dip_to_black, crossfade — decididas por fronteira de plano.</p></div>
-    <div class="card"><h3>Multi-shot</h3><p>Imagens ricas viram 2–4 shots, com a narração podendo atravessar o corte para manter o fluxo.</p></div>
+    <div class="card"><h3>Decupagem antes do render</h3><p>A skill mostra a tabela cena · imagem · beat · movimento · transiçêo · duraçêo para você aprovar antes de rodar o render.</p></div>
+    <div class="card"><h3>Transições por fronteira</h3><p>Nunca uniformes: cut (padrêo, ~70%), whip, whip_left, zoom_blur, dip_to_black, crossfade — decididas por fronteira de plano.</p></div>
+    <div class="card"><h3>Multi-shot</h3><p>Imagens ricas viram 2–4 shots, com a narraçêo podendo atravessar o corte para manter o fluxo.</p></div>
   </div>
 </div></section>
 
@@ -163,10 +163,10 @@
     <div class="card"><h3>pixflow v2.3+</h3><p>Motor de render do spec YAML (parallax 2.5D, 18 movimentos, transições, looks). Fica em <code>~/projetos/pixflow/skill</code>.</p><pre><span class="c"># checar todas as dependências</span>
 <span class="k">cd</span> <span class="s">~/projetos/pixflow/skill</span>
 <span class="k">node</span> cli/pixflow-motion.mjs check-deps</pre></div>
-    <div class="card"><h3>Node.js ≥18 + FFmpeg</h3><p>Node roda os scripts <code>.mjs</code> (montar-trilha) e a CLI do pixflow. FFmpeg/ffprobe medem a narração, fazem o encode e a verificação de frames.</p><pre><span class="c"># versões</span>
+    <div class="card"><h3>Node.js ≥18 + FFmpeg</h3><p>Node roda os scripts <code>.mjs</code> (montar-trilha) e a CLI do pixflow. FFmpeg/ffprobe medem a narraçêo, fazem o encode e a verificaçêo de frames.</p><pre><span class="c"># versões</span>
 <span class="k">node</span> -v
 <span class="k">ffmpeg</span> -version</pre></div>
-    <div class="card"><h3>Claude Code com visão + TTS opcional</h3><p>A skill abre cada imagem (Read/visão) antes de dirigir. Quando a entrada é texto, gera a narração via HyperFrames TTS (Kokoro, voz <code>pf_dora</code>).</p><pre><span class="c"># narração a partir de texto (opcional)</span>
+    <div class="card"><h3>Claude Code com visêo + TTS opcional</h3><p>A skill abre cada imagem (Read/visêo) antes de dirigir. Quando a entrada é texto, gera a narraçêo via HyperFrames TTS (Kokoro, voz <code>pf_dora</code>).</p><pre><span class="c"># narraçêo a partir de texto (opcional)</span>
 <span class="k">npx</span> hyperframes tts</pre></div>
   </div>
 </div></section>
@@ -174,7 +174,7 @@
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
   <h2>Do material ao MP4</h2>
-  <p class="sub">Instale a skill, entregue imagens + narração ao Claude Code, aprove a decupagem e deixe o pixflow renderizar.</p>
+  <p class="sub">Instale a skill, entregue imagens + narraçêo ao Claude Code, aprove a decupagem e deixe o pixflow renderizar.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Instalar a skill</h3>
@@ -184,22 +184,22 @@
 
   <div class="step"><div class="b">2</div><div>
     <h3>Checar dependências</h3>
-    <p>Garanta que o motor pixflow e suas dependências estão ok antes de dirigir.</p>
+    <p>Garanta que o motor pixflow e suas dependências estêo ok antes de dirigir.</p>
 <pre><span class="k">cd</span> <span class="s">~/projetos/pixflow/skill</span> && <span class="k">node</span> cli/pixflow-motion.mjs check-deps  <span class="c"># tudo verde</span></pre>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
-    <h3>Entregar imagens + narração</h3>
-    <p>No Claude Code, dê o conjunto de imagens e a narração (áudio ou texto) e peça em linguagem natural.</p>
+    <h3>Entregar imagens + narraçêo</h3>
+    <p>No Claude Code, dê o conjunto de imagens e a narraçêo (áudio ou texto) e peça em linguagem natural.</p>
 <pre><span class="c"># peça à skill</span>
 <span class="s">"vira filme"</span>  ·  <span class="s">"anima essas imagens"</span>  ·  <span class="s">"dirige esse material"</span></pre>
   </div></div>
 
   <div class="step"><div class="b">4</div><div>
     <h3>Aprovar a decupagem</h3>
-    <p>A skill mostra a decupagem (cena · imagem · beat · movimento · transição · duração). Revise antes do render.</p>
-<pre><span class="c"># a skill monta a trilha compensando os overlaps de transição</span>
-<span class="k">node</span> skill/diretor-animacao/montar-trilha.mjs  <span class="c"># nunca calcule starts na mão</span></pre>
+    <p>A skill mostra a decupagem (cena · imagem · beat · movimento · transiçêo · duraçêo). Revise antes do render.</p>
+<pre><span class="c"># a skill monta a trilha compensando os overlaps de transiçêo</span>
+<span class="k">node</span> skill/diretor-animacao/montar-trilha.mjs  <span class="c"># nunca calcule starts na mêo</span></pre>
   </div></div>
 
   <div class="step"><div class="b">5</div><div>
@@ -214,9 +214,9 @@
   <h2>Onde a skill brilha</h2>
   <p class="sub">Casos reais e validados no próprio repositório, das regras de ouro ao primeiro filme completo.</p>
   <div class="grid g2">
-    <div class="card"><h3>🎬 O Pequeno Príncipe</h3><p>Primeiro filme real da skill: 21 ilustrações + 22 WAVs de narração viraram 2min11 com 26 shots, música CC0 com ducking, vento, whooshes e shimmer. Decupagem completa em <code>exemplos/pequeno-principe.md</code>.</p></div>
+    <div class="card"><h3>🎬 O Pequeno Príncipe</h3><p>Primeiro filme real da skill: 21 ilustrações + 22 WAVs de narraçêo viraram 2min11 com 26 shots, música CC0 com ducking, vento, whooshes e shimmer. Decupagem completa em <code>exemplos/pequeno-principe.md</code>.</p></div>
     <div class="card"><h3>🎬 Pilotos F0…F2</h3><p>A pasta <code>piloto-f0/</code> guarda pilotos e experimentos com specs <code>*.movie.yaml</code> e decupagens que validaram cada regra (foto vs. desenho, transições, fim suspenso).</p></div>
-    <div class="card"><h3>🎬 Gramática cARCKHÉtográfica</h3><p>Tabela mestra movimento × beat e curva de 3 atos em <code>references/gramatica-direcao.md</code> — a base de decisão da direção.</p></div>
+    <div class="card"><h3>🎬 Gramática cARCKHÉtográfica</h3><p>Tabela mestra movimento × beat e curva de 3 atos em <code>references/gramatica-direcao.md</code> — a base de decisêo da direçêo.</p></div>
     <div class="card"><h3>🎬 Lições de render</h3><p><code>DICAS-CORRECOES.md</code> reúne 9 lições cross-projeto: anti-pisca, frames pretos, anti-fantasma e mais.</p></div>
   </div>
 </div></section>
@@ -224,11 +224,11 @@
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>O que vem no backlog</h2>
-  <p class="sub">Itens descritos no PLANO.md do projeto. Sem datas — a direção evolui com os pilotos.</p>
+  <p class="sub">Itens descritos no PLANO.md do projeto. Sem datas — a direçêo evolui com os pilotos.</p>
   <div class="phase"><div class="tag">Base</div><div class="d"><strong>Fluxo completo + regras de ouro</strong><span>VER → … → VERIFICAR, 18 movimentos, transições por fronteira e as regras validadas por A/B.</span></div></div>
   <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Upgrade de transições</strong><span>Ampliar o repertório de fronteiras além do conjunto atual.</span></div></div>
   <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Eventos de luz e partículas</strong><span>Camadas extras de atmosfera no render.</span></div></div>
-  <div class="phase"><div class="tag">Futuro</div><div class="d"><strong>Speed-ramp</strong><span>Variação de ritmo dentro do plano, no backlog do PLANO.md.</span></div></div>
+  <div class="phase"><div class="tag">Futuro</div><div class="d"><strong>Speed-ramp</strong><span>Variaçêo de ritmo dentro do plano, no backlog do PLANO.md.</span></div></div>
 </div></section>
 
 <footer>
